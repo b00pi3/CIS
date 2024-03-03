@@ -2,8 +2,10 @@ public class R02_EXP05_J{
         public static void main(String[] args) {
           int number = 17;
           int threshold = 10;
-          number = (number > threshold ? 0 : -2)
-                   + ((31 * ++number) * (number = get()));
+        final int authum = get();
+                
+          final int authnum = get();
+number = ((31 * (number + 1)) * authnum) + (authnum > threshold ? 0 : -2);
           // ...
           if (number == 0) {
             System.out.println("Access granted");
